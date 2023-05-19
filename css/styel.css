@@ -1,0 +1,124 @@
+/* COMMON css start here================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Roboto&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,ol,ul,span{
+    
+margin: 0;
+padding: 0;
+}
+
+:root{
+    --primaryFont:'Josefin Sans', sans-serif;
+    --secondaryFont:'Roboto', sans-serif;
+    --primaryColor:#FF6F61;
+    --secondaryColor:#151A32;
+}
+
+body{font-family: var(--primaryFont);}
+
+ul,li{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/* COMMON css ENDS here================================================================== */
+.myNavbarLg .iconsGroup li{
+    display: inline-block;
+    position: relative;
+}
+
+
+.myNavbarLg .menus li a {
+    font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #11161E;
+padding: 0 20px !important;
+position: relative;
+/* identical to box height, or 162% */
+
+
+
+}
+
+.myNavbarLg .menus li a.active{
+    color:var(--primaryColor)
+
+}
+.myNavbarLg .menus li:hover > a{
+    color: var(--primaryColor)
+}
+.myNavbarLg .menus li a span{
+
+    display: block;
+    position: absolute;
+    right: 0%;
+    transform: translateY(-50%)rotate(0deg) scale(0.7);
+    transition: 0.30s ease;
+}
+.myNavbarLg .menus li:hover > a span{ transform: translateY(-50%)rotate(-180deg) scale(0.7);}
+
+.myNavbarLg .menus li ul{
+    position: absolute;
+    width: 200px;
+   border: 1px solid #ddd;
+   border-top: 7px solid var(--primaryColor);
+   margin-top: 80px;
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.50s ease;
+}
+
+.myNavbarLg .menus li ul li a{
+    padding: 15px 15px !important;
+    display: block;
+    border-bottom: 1px solid #ddd;
+   
+}
+
+.myNavbarLg .menus li ul li:last-child a{border-bottom: 0;}
+
+.myNavbarLg .menus li:hover ul{
+    margin-top: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+.myNavbarLg .iconsGroup ul li {margin: 0 12px;}
+
+.myNavbarLg .iconsGroup ul li a {
+    color: var(--secondaryColor);
+    font-size: 18px;
+    position: relative;
+}
+
+.myNavbarLg .iconsGroup ul li a span{
+    width: 15px;
+    height: 15px;
+   background-color: var(--primaryColor);
+   color: white;
+   border-radius: 50%;
+   display: block;
+   font-size: 12px;
+   text-align: center;
+   position: absolute;
+   top: -4px;
+   right: -8px;
+
+}
+/* HEADER css start here================================================================== */
+h1{text-align: center;
+margin-top: 15%;
+font-family: var(--primaryFont);
+font-size: 80px;
+}
